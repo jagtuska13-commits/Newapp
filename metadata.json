@@ -1,0 +1,6 @@
+{
+  "name": "Aether AI Companion",
+  "description": "An advanced, frosted-glass AI best friend chatbot featuring glowing neon liquid blobs, cinematic opening scene, persona customization, voice readout, and persistent memory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
