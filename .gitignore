@@ -17,3 +17,4 @@ local.properties
 .env
 debug.keystore
 my-upload-key.jks
+keystore_base64.txt
