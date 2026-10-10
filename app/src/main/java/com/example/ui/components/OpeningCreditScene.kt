@@ -155,7 +155,7 @@ fun OpeningCreditScene(
                             Spacer(modifier = Modifier.height(2.dp))
                             Row(verticalAlignment = Alignment.CenterVertically) {
                                 Icon(
-                                    imageVector = Icons.Default.AutoAwesome,
+                                    imageVector = Icons.Filled.AutoAwesome,
                                     contentDescription = null,
                                     tint = NeonCyan,
                                     modifier = Modifier.size(12.dp)
