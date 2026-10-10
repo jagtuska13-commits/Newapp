@@ -334,7 +334,7 @@ fun TopBarHeader(
         ) {
             IconButton(onClick = onOpenDrawer) {
                 Icon(
-                    imageVector = Icons.Default.Menu,
+                    imageVector = Icons.Filled.Menu,
                     contentDescription = "Conversations",
                     tint = TextPrimary
                 )
@@ -401,7 +401,7 @@ fun TopBarHeader(
                 IconButton(onClick = onOpenMemorySheet) {
                     Box {
                         Icon(
-                            imageVector = Icons.Default.Bookmark,
+                            imageVector = Icons.Filled.Bookmark,
                             contentDescription = "Memories",
                             tint = NeonCyan
                         )
@@ -427,7 +427,7 @@ fun TopBarHeader(
 
                 IconButton(onClick = onOpenPersonaSheet) {
                     Icon(
-                        imageVector = Icons.Default.Palette,
+                        imageVector = Icons.Filled.Palette,
                         contentDescription = "Themes & Personas",
                         tint = TextPrimary
                     )
@@ -435,7 +435,7 @@ fun TopBarHeader(
 
                 IconButton(onClick = onReplayCredit) {
                     Icon(
-                        imageVector = Icons.Default.AutoAwesome,
+                        imageVector = Icons.Filled.AutoAwesome,
                         contentDescription = "Replay Opening Scene",
                         tint = NeonPink
                     )
@@ -471,7 +471,7 @@ fun DrawerContent(
             ) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Icon(
-                        imageVector = Icons.Default.AutoAwesome,
+                        imageVector = Icons.Filled.AutoAwesome,
                         contentDescription = null,
                         tint = NeonCyan
                     )
@@ -486,7 +486,7 @@ fun DrawerContent(
 
                 IconButton(onClick = onNewChat) {
                     Icon(
-                        imageVector = Icons.Default.Add,
+                        imageVector = Icons.Filled.Add,
                         contentDescription = "New Chat",
                         tint = NeonPink
                     )
@@ -534,7 +534,7 @@ fun DrawerContent(
                                     modifier = Modifier.size(28.dp)
                                 ) {
                                     Icon(
-                                        imageVector = Icons.Default.Delete,
+                                        imageVector = Icons.Filled.Delete,
                                         contentDescription = "Delete",
                                         tint = TextMuted,
                                         modifier = Modifier.size(16.dp)
@@ -602,7 +602,7 @@ fun MessageItemCard(
                         ) {
                             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                 Icon(
-                                    imageVector = Icons.Default.AddPhotoAlternate,
+                                    imageVector = Icons.Filled.AddPhotoAlternate,
                                     contentDescription = null,
                                     tint = NeonCyan,
                                     modifier = Modifier.size(32.dp)
@@ -664,7 +664,7 @@ fun MessageItemCard(
                                     modifier = Modifier.size(24.dp)
                                 ) {
                                     Icon(
-                                        imageVector = Icons.Default.ContentCopy,
+                                        imageVector = Icons.Filled.ContentCopy,
                                         contentDescription = "Copy",
                                         tint = TextSecondary,
                                         modifier = Modifier.size(15.dp)
@@ -815,7 +815,7 @@ fun InputBottomBar(
                         .padding(horizontal = 10.dp, vertical = 4.dp)
                 ) {
                     Icon(
-                        imageVector = Icons.Default.AddPhotoAlternate,
+                        imageVector = Icons.Filled.AddPhotoAlternate,
                         contentDescription = null,
                         tint = NeonCyan,
                         modifier = Modifier.size(16.dp)
@@ -828,7 +828,7 @@ fun InputBottomBar(
                     )
                     Spacer(modifier = Modifier.width(6.dp))
                     Icon(
-                        imageVector = Icons.Default.Close,
+                        imageVector = Icons.Filled.Close,
                         contentDescription = "Remove",
                         tint = NeonPink,
                         modifier = Modifier
@@ -844,7 +844,7 @@ fun InputBottomBar(
             ) {
                 IconButton(onClick = onAttachSampleImage) {
                     Icon(
-                        imageVector = Icons.Default.AddPhotoAlternate,
+                        imageVector = Icons.Filled.AddPhotoAlternate,
                         contentDescription = "Attach photo",
                         tint = NeonCyan
                     )
@@ -1013,7 +1013,7 @@ fun MemoryNotebookSheet(
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Icon(
-                imageVector = Icons.Default.Bookmark,
+                imageVector = Icons.Filled.Bookmark,
                 contentDescription = null,
                 tint = NeonCyan
             )
@@ -1068,7 +1068,7 @@ fun MemoryNotebookSheet(
             contentColor = Color.White,
             modifier = Modifier.align(Alignment.End)
         ) {
-            Icon(imageVector = Icons.Default.Add, contentDescription = "Add Memory")
+            Icon(imageVector = Icons.Filled.Add, contentDescription = "Add Memory")
         }
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -1103,7 +1103,7 @@ fun MemoryNotebookSheet(
                         }
                         IconButton(onClick = { onDeleteMemory(mem.id) }) {
                             Icon(
-                                imageVector = Icons.Default.Delete,
+                                imageVector = Icons.Filled.Delete,
                                 contentDescription = "Remove",
                                 tint = TextMuted,
                                 modifier = Modifier.size(18.dp)
