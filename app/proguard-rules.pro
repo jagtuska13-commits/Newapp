@@ -19,3 +19,10 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Keep Moshi generated adapters, @Json annotations, and data models
+-keepattributes *Annotation*
+-keepclassmembers class * {
+    @com.squareup.moshi.Json *;
+}
+-keep class com.example.data.api.Gemini** { *; }
