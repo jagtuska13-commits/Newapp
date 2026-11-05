@@ -23,14 +23,14 @@ jobs:
         run: |
           echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > my-upload-key.jks
 
-      - name: Build Release APK
-        run: ./gradlew assembleRelease
+      - name: Build Release AAB
+        run: ./gradlew bundleRelease
         env:
           STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
 
-      - name: Upload APK
+      - name: Upload AAB
         uses: actions/upload-artifact@v3
         with:
-          name: release-apk
-          path: app/build/outputs/apk/release/app-release.apk
+          name: release-aab
+          path: app/build/outputs/bundle/release/app-release.aab
